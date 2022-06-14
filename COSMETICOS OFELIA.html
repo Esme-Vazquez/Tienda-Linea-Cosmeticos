@@ -1,0 +1,124 @@
+<html>
+	<head>
+	<meta charset="utf-5"/> 
+  		<title> COSMETICOS "OFELIA" </title>
+  	<link rel="stylesheet" type="text/css" href="CSS.css">	
+</head>
+	<body>
+	
+		<div id= "contenedor">
+ 			 	<header>
+        <img src="imagenes/TITULO.png" width="800" height="95">
+         
+				</header>
+
+
+
+  				<NAV>
+				<li>
+					<a href="INICIO.html"> INICIO </a>
+				</li>
+   				<li>
+   					<a href="CUIDADO DE LA PIEL.html"> CUIDADO DE LA PIEL  </a>
+   				</li>
+    			<li>
+    				<a href="BASES Y CONTORNOS.html"> BASES Y CONTORNOS  </a>
+    			</li>
+    			<li>
+    				<a href="CEJAS Y OJOS.html"> CEJAS Y OJOS </a>
+    			</li>
+    			<li>
+    				<a href="PEDIDO.html"> PEDIDO </a>
+    			</li>	
+
+  				</NAV>
+
+          
+ <form name="Tick" id="Tick">
+                <p align="center">
+                    <input type="text" size="11" name="Clock" />
+                </p>
+            </form>
+  <script>
+            function show() {
+                var Digital = new Date()
+                var hours = Digital.getHours()
+                var minutes = Digital.getMinutes()
+                var seconds = Digital.getSeconds()
+                var dn = "AM"
+                if (hours > 12) {
+                    dn = "PM"
+                    hours = hours - 12
+                }
+                if (hours == 0)
+                    hours = 12
+                if (minutes <= 9)
+                    minutes = "0" + minutes
+                if (seconds <= 9)
+                    seconds = "0" + seconds
+                document.Tick.Clock.value = hours + ":" + minutes + ":" +
+                    seconds + " " + dn
+                setTimeout("show()", 1000)
+            }
+            show();
+            </script>
+
+ <form>
+  				<section id="contens">
+            <font size=5 color =#00000>
+            <marquee BGCOLOR=#9933FF behavior="alternate"> COSMETICOS
+            </marquee>
+          </font>
+  					<img src="imagenes/BIENVENIDAIMG.png" width="800" height="95">
+                    <center>
+                    <img src="imagenes/ESLOGAN.png" width="500" height="75"> </center>
+  					<article class="articulo">
+  						<h2> CUIDADO DE LA PIEL
+  						</h2>
+  						<p> Podras encontrar mascarillas y cremas para la piel para hidratar. </p>
+  					</article>
+
+  					<article class="articulo">
+  						<h2> BASES Y CONTORNOS
+  						</h2>
+  						<p> Aqui podras encontrar bases liquidas o en barra y tambien correctores para tus contornos </p>
+  					</article>
+
+  					<article class="articulo">
+  						<h2> CEJAS Y OJOS
+  						</h2>
+  						<p> Podras encontrar lapices para tu ceja en distintos tonos así como delineadores </p>
+  					</article>
+
+  					<article class="articulo">
+  						<h2> PEDIDO
+  						</h2>
+  						<p> Compra lo que te haya gustado  </p>
+
+  					</article>
+  	<center>				
+<video controls src="videos/Maquillaje video1.mp4" width="400" height="200">
+</video>
+</center>
+
+            
+  				</section>
+<aside>
+  					<h3>barra lateral</h3>
+  				    <form>
+
+  				    
+				       <input type="texto">
+				       <input type="submit" value="buscar" />
+              </form> 
+  				</aside>
+
+          <div class="clearfix"> </div>
+  				
+          <footer>
+  				
+  				</footer>	
+
+	</body>
+
+</html>
